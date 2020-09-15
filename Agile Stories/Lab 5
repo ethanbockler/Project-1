@@ -1,0 +1,232 @@
+Lab 5 - MESK Group
+
+Agile/user Stories:
+1. As an administrator, I want to be able to add national parks to the list without users being able to access maintenance.
+Description:
+This story is at the back end of the software and should be included in the code. The overall goal for this section of the project should be to be able to add national parks to our national parks list so that the user is able to access information about them when using our software. Ideally, this section of the code will be in the “administrator” section and will only be accessible by a password. The reason for this is ease of use; adding a national park should not require a rewrite of the entire code, instead it should be a part of the software where an administrator can access and easily input data for a new national park, that is then added to the final product.
+Estimation:
+The estimation for this story should be moderate to difficult, the difficult part of it will be inputting the data through qt, since many in the group are not amazingly familiar with the software. Writing the code should not take long and should really need one function for it to be complete. One thing that could raise a problem is storing the park after the program has finished running.
+Assumptions:
+Our assumptions are that we are able to gather all the necessary information about a given national park that we want to add to our software. Another assumption is that we have the ability to manually input this through qt and are able to store it for future use. Our password should protect outside sources from being able to add national parks, making it only accessible for those in our group.
+Priority & Assignee(s): Kabir (Coding & Qt), Ethan (Qt)
+	This should be a very high priority as it is the backbone of our project, and without the ability to add national parks, the software would basically be useless.
+Tasks and Tests:
+Write code that when accessed can create a national park using the information an administrator enters
+Make this section of the software easy to use through Qt and only accessible to those who have the administrator password
+Create a system to store national parks after the software has finished running (File i/o)
+Definition of Done:
+Code fully functional and peer reviewed by the team
+Be able to access through an administrative password
+Stores a new national park in a file to then be used in the future by anyone who accesses the software
+The customer should not be able to access or add new national parks, but should be able to see new ones that administrators have created
+2. As a customer, I want to be able to seek support, so that I am able to use this program easily and efficiently. 
+Description:
+	It should be a top priority to us that the customer can use the program easily and can report any problems with it so future customers do not face similar issues. This story implements a support button that should contain two different sections. The first section should be any frequently asked questions and tips on how to use our program properly and effectively. The second section should include a form of contact that allows the user to send us any complaints or concerns about the program so that we are able to communicate with them and hopefully find a way to fix their issues.
+Estimation:
+	This story should be very easy since most of the code is outputting text data onto the screen. There are multiple ways to accomplish the support button but all of them are easy. The most efficient way to accomplish the button would be for the user to leave a message along with a contact email that is stored in a file, where we can then email them back. Another option would be to link them to an email or phone number.
+Assumptions:
+	The customer has some sort of contact information that we are able to communicate through and are able to contact support should they need any help using our application software.
+Priority & Assignee(s): Kabir
+	This should be a moderate priority since it should be able to be done very easily and it is a part of the code which is required. All of our lab members should familiarize themselves with Qt since it is going to be a very important part of this project, and the only part of this particular task that may pose any issues just due to the fact that we do not have a lot of experience using this application.
+Tasks and Tests:
+Write code that can be accessed by anyone using the program that allows the user to access any necessary information about how to use the program as well as a support button that should allow a customer to submit a complaint or support ticket that we can assist them with.
+This section of the code needs to be extremely clear and concise as it is a tool that is used to assist those who are confused.
+Test run to see if messages are being stored correctly and the contact information works well.
+Definition of Done:
+A support button that allows the user to access contact information and necessary information about the program
+Code that fully adheres to our coding standards and is checked by all members of our project
+Output clear statements that help the customer understand how to use and maneuver through the program
+A complaint or support system that helps the customer quickly and effectively
+3. As a product manager, I want to provide clear goals, in order for my team to have one firm task that they are seeking to accomplish, improving productivity.
+Description:
+	As a product manager, there should be clear goals throughout the team to then be able to leap off of a solid foundation. Team members work quicker and more efficiently when they know what tasks they need to do and when they need to accomplish them. The product manager will work closely with the scrum master to determine goals and dates to then be set out and accomplished by the rest of the team. The product manager should keep team members well informed and possibly make some sort of calendar or system that assists members in completing their goals on time.
+Estimation:
+	This story should not take a lot of time to complete and only requires minimal effort so the estimation for difficulty should be very low, as long as the product owner is well organized. Creating the calendar can also be a team effort and should not only lean on the product manager. As long as the whole team has good communication and time management this story should be easy to accomplish.
+Assumptions: 
+	All team members will adhere to the calendar and keep in contact with the product manager so that they can do their job to the maximum capacity. 
+Priority & Assignee(s): All members
+	This should be a low priority since, while still important, does not necessarily need to be completed as part of our final software. Achieving this goal will surely assist us in finishing the project on time and completely, but it is not required and since there is nothing the user can see as a result of this task, it should not take the president over more important parts of the code. 
+Tasks and Tests: 
+Create a system of open communication where the product owner can easily communicate with members of the team
+There should be set deadlines and timelines for when certain members of the project should have completed their section of the code
+The product manager should be able to keep up with team members and assist them with any complications that they might run into as well as make sure that they are on track to finish their code in a timely manner
+There may be some sort of calendar that assists team members in knowing when they are supposed to finish their tasks.
+Definition of Done:
+An open line of communication between all team members
+A clear timeline that is adhered to by members in the group that includes clear goals and tasks that should be achieved
+Some sort of calendar that allows members to see when their tasks should be completed
+
+
+4. As a customer, I want to be able to understand the use/purpose of the program easily based on the descriptions and tools provided.
+Description:
+This story is all about the successful communication of the application’s purposes and uses to its customers so that the customer understands how and when to use the application and why they might need it.
+Estimation:
+This story should be relatively quite easy to achieve regarding technicality as it focuses more so on the directions and instructions provided with the application and will require just a clear, concise way of writing descriptively. A basic rough draft should take max one hour.
+Assumptions:
+We assume the customer knows English as that is the language we will be writing in and that they have very basic knowledge about what the application does and wants to know more. 
+Priority & Assignee(s): All team members
+The priority is medium as directions/descriptions can be rewritten/adjusted/fixed/edited anytime throughout the developmental process, but a basic format should be completed to help guide the actual coding of the application and the purposes/uses of its tools.
+Tasks and Tests: 
+Write a clear and concise couple of paragraphs that gives an overview of the uses, tools, and purposes of the application directed for the customer’s and user’s use of it. 
+Include a help option button where this info will be contained in. 
+Test run with a team member acting as an interested customer and see if the app passes our definition of good usability.
+Definition of done:
+Code fully documented and functional (all syntax and logic errors fixed)
+Code adheres to coding standard 
+Completes all points under the lists of tasks/tests
+Peer reviewed (or produced with pair programming) 
+The customer verifies that the story was done correctly
+ 
+ 
+5. As a team, we want to communicate effectively so that we can help each other when needed and to make sure that we are all on the same page.
+Description:
+This story is all about the successful communication between the team members regarding all things related to the developmental process of the application, coding or general planning, so that we can achieve a smooth, forward-moving development of the application and sidestepping any delays that have to do with miscommunication.
+Estimation: 
+This story should be relatively quite easy to achieve as it will not take too much time for the team members to find and get used to a regular, reliable way of communication. Settling a way of communication and times of meetings should be done within the first week of development. 
+Assumptions:
+We assume the team members have smart phones and computers and that they have a reliable messaging application on top of email.
+Priority & Assignee(s): Mariam
+The priority is high as the basis of the application’s development starts from actually having team meetings and sessions where work can be done and questions can be answered and there’s a way to contact members quickly.
+List of tasks and tests: 
+Create a text messaging group chat
+Share any relevant google documents to all team member’s emails
+No tests needed besides making sure all contacts can be contacted successfully
+Definition of done:
+All team members can be contacted, phone numbers and emails collected
+All points under list of tasks and tests completed 
+All team members agree that the story was done correctly
+
+
+6. As a user, I want to be able to see the result of any sortings in a clear, understandable, and standard format.
+Description:
+This story wants to make sure that any user of the application can understand the results of the sorted lists, meaning that the information is always presented in an organized and standardized manner.
+Estimation:
+This story should be around a low-medium estimation (a couple coding days) as it will require code that has to do with the visual representation of the sorted lists and while it would require some coding, the intensity of the coding will not be high. 
+Assumptions:
+We assume the user wants to see the lists in a chart/table format and wants that to be the case for any list produced. 
+Priority & Assignee(s): All members
+The priority is not high as of right now as the coding that actually produces the lists is more of a priority and the code for the visual representation is not needed immediately when just starting to code. 
+List of tasks and tests: 
+Get familiar with relevant coding tools/softwares that help with formats 
+Create code that formats the information in a table with clear column and row titles
+Test a practice run with random info that places the list’s items in table format
+Definition of done:
+Code fully documented and functional (all syntax and logic errors fixed)
+Code adheres to coding standard 
+Completes all points under the lists of tasks/tests
+Peer reviewed (or produced with pair programming) 
+The user confirms that the story was done correctly
+
+
+7. As a scrum master I want to log all team meetings so that objectives and other tasks can be accounted for.
+ Detailed Description: 
+This story makes sure that the scrum master keeps track of meetings in order to be able to facilitate the work of the group and to ensure that the group is progressing toward the goal. The scrum master will use the information logged from meetings to be able to help each individual group member with their tasks.
+Story Point Estimation:
+This story should be easy to moderate in difficulty because the scrum master will have to log any important information from all meetings.
+List of Assumptions: 
+We assume that the scrum master will be present for all meetings and that the group meets regularly to discuss the project.
+Priority: 
+This story is low to medium in priority because it is not essential to completing the project, but is important so that the scrum master can help group members and keep track of progress for each member.
+Assignee(s):
+Kabir
+List of Task and Test:
+Whenever the group has a meeting log any important information that is discussed in the meeting.
+In meetings, log the progress of each member so that we can make sure that the member is following the rules of the scrum team and completing their designated task.
+Definition of Done:
+Scrum master has logged important info for every meeting that the group has had
+Scrum master keeps track of the progress of individuals from information that they have provided in meetings 
+Scrum master uses info from meetings to ensure group members are following the rules
+
+
+8. As a team member, I want to be reminded of upcoming deadlines so that I can complete tasks on time. 
+Detailed Description: 
+This story is important in order to keep deadlines in check to make sure that our group is staying on track with our goals for the current sprint.
+Story Point Estimation: 
+This story should be easy to complete as long as group members form some way to remember dates for deadlines, such as marking their calendar or creating a reminder on their phone, and group members hold each other accountable for getting their tasks done in a timely fashion.
+List of Assumptions: 
+We assume that group members will be responsible and use some way to remind themselves of upcoming deadlines.
+Priority: 
+This story is low priority as it is not essential to completing the task, but will be a helpful way to get a sense of progress and how far along the group is in completing what is expected of a sprint.
+Assignee(s):
+All members
+List of Tasks and Tests:
+Find a way to remember dates for deadlines (ex. Mark calendars or create reminders)
+Discuss with other group members when you plan to work on/complete a task.
+Definition of Done:
+Group members are aware of any upcoming deadlines
+Group members have a way of remembering upcoming deadlines throughout the duration of a sprint such as a mark on a calendar or some sort of reminder.
+Group members remind each other of deadlines and make sure they are on track to complete the task by the deadline
+
+
+9. As a team member, I want to finish the sorting algorithms by the end of sprint one so that we can then focus on the visual aspects of our project and put all of our code together.
+Description:
+This story emphasizes the importance of everyone sticking to the schedule so that by finishing the sorting algorithms by sprint one, the team gets through a huge section of the project and all that is left to finish is the actual implementation of the algorithms in the overall code and overall design of the pamphlet.
+Estimation: 
+This story should be around a medium-medium high estimation since it may require 2-3 days for everyone to finish their assigned sorting algorithms, taking into account that team members also have other assignments outside of the project to do. 5-8
+Assumptions: 
+We assume that everyone should stick to coding guidelines and should finish their assigned algorithm at least 2 days before sprint one is due. 
+Priority & Assignee(s): All members
+This is high priority because this is what is due for sprint one and we cannot advance further in the project without getting the sorting algorithms finished.
+List of tasks and tests:
+Review previous sorting algorithms from various assignments
+Write functional and efficient code that sorts the national parks and sticks to coding guidelines
+Test a practice run with both random inputs as well as the list of national parks
+Finish two days before sprint 1
+Definition of done:
+Sorting algorithm is fully functional and peer reviewed by other teammates 
+Code fully documented and adheres to coding guidelines
+Code checked into source control system
+Product owner, as well as other teammates concur the code and user story is
+Completed
+
+
+10. As a team member, I want to prioritize the functionality of the program before the aesthetics, to ensure that our program is working fully and properly.
+Description:
+Team members should prioritize that they have debugged and reviewed their code so that it is fully functional as stated in the project worksheet before working on the aesthetics of the pamphlet project.
+Story point estimation:
+8+ Debugging and reviewing the functionality of the code requires at least 2-3 days for everyone to assess their own and each others sections in the project. Reviewing the overall functionality of the entire project may take at least 3 days to ensure that each piece of code can be executed in the main program. As long as the team sticks to the schedule and manages their time well, this story should be easy to finish.
+Assumptions:
+Everyone should commit to the functionality of their code in each of their assigned sections throughout the creation and debugging process.
+This will require at least 2-3 days for everyone to review each others sections, taking into account that everyone has other assignments going on
+This story includes the functionality of the final code and thus will need more time to review all of the code
+This will require another 2-3 days total to review the overall functionality of the final code, including the sorting algorithms, call for help, etc. 
+Priority & Assignee(s): All members
+High priority, without a properly functioning code there is nothing to peer review or submit. 
+List of tasks and tests:
+Code assigned section
+Adhere to style, documentation, and overall code guidelines
+Practice run and test each section’s code 
+Peer review section by section, as well as entire code
+Definition of done:
+Code is fully functional, no bugs, and sticks with the coding guidelines
+Ran practice tests to ensure functionality
+Peer reviewed
+Confirm code and story user by project manager, as well as other teammates
+
+
+Stories to be done in Sprint 1: #5 #7 #8 #9
+The goal of sprint one is to set a clear foundation for future progress: This includes setting up rules and coding standards as well as which tasks are to be done by each team member. Additionally, we want to be able to start making the basics of our program so that we have a platform to build on. The basics of our program include foundational code and a setup of the files we need. 
+
+Team Rules:
+1. Please make sure that you are able to make it to all of our predetermined meetings, and if a situation occurs where you are unable to make it to a meeting, please notify the group ahead of time
+2. Please submit all of your code into the github repository on time, and peer review other members code.
+3. If an individual is stuck on a certain task please notify the group so that we can schedule a time to help the individual or swap tasks with another person. 
+
+
+
+
+Coding Standards:
+1. Make sure to comment on your functions to ensure that every team member is aware of what your code is doing.
+2. Space your code clearly so that it is easily readable by the other team members.
+3. Use the correct capitalization standards that are present in our CS1C class so that data is easy to work with and access.
+
+
+
+
+
+
+Extra Links and References
+https://www.mountaingoatsoftware.com/agile/user-stories
+https://www.visual-paradigm.com/scrum/what-is-agile-planning-poker/
+“As a [persona], I [want to], [so that].”
+
