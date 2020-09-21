@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-Class nationalPark
+class nationalPark
 {
 public:
 	//constructor and destructor 
