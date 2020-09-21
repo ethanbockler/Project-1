@@ -1,5 +1,6 @@
 #include "nationalparks.h"
 
+
 ifstream inFile;
 int count; 
 count = 0; 
@@ -13,6 +14,7 @@ const int AR_SIZE = 11;
 ifstream inFile;
 inFile.open("file_name");
 
+// ADD THIS TO THE CLASS DEFINITION OF THE largerParklist.cpp
 park listofparks[AR_SIZE];
 while (inFile && count<AR_SIZE)
 {
