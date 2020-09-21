@@ -6,6 +6,9 @@ int count;
 count = 0; 
 
 // read in from input file 
+ifstream inFile;
+inFile.open("file_name");
+
 Parks *initialptr;
 initialptr = new Parks;
 while (inFile && initialptr != NULL)
