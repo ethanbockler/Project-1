@@ -25,6 +25,6 @@ private:
 	string parkState;
 	int parkVisitors;
 	double parkSize;	
-}
+};
 
 #endif
