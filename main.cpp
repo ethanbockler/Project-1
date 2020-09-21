@@ -1,4 +1,5 @@
-// THIS SHOULD BE IN MAIN MY B BUT IM LEAVING IT HERE FOR RN mariam
+#include "nationalparks.h"
+
 ifstream inFile;
 int count; 
 count = 0; 
