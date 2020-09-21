@@ -1,5 +1,5 @@
-#ifndef NATIONALPARKS_H
-#define NATIONALPARKS_H
+#ifndef LARGERPARKLIST_H
+#define LARGERPARKLIST_H
 #include "nationalPark.h"
 using namespace std;
 
