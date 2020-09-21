@@ -1,7 +1,7 @@
 #include <fstream>
 #include <iostream>
 #include <string>
-#include "nationalParks.h"
+#include "nationalPark.h"
 	
 //mutators:
 void nationalPark::newPark()
@@ -10,32 +10,33 @@ void nationalPark::newPark()
 }
 
 // accessors 
-string nationalPark::returnName() const
+string nationalPark::returnName()
 {
     return parkName;
 }
 
-string nationalPark::returnState() const
+string nationalPark::returnState()
 {
     return parkState;
 }
 
-int nationalPark::returnVisitors() const
+int nationalPark::returnVisitors()
 {
     return parkVisitors;
 }
 
-double nationalPark::returnSize() const
+double nationalPark::returnSize()
 {
     return parkSize;
 }
 
 //constructor and destructor 
-park::park()
+nationalPark::nationalPark()
 {
     parkName = " ";
     parkState = " ";
     parkVisitors = 0;
     parkSize = 0;
 }
-park::~park() {}
+
+nationalPark::~nationalPark() {}
