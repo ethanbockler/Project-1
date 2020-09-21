@@ -11,7 +11,7 @@ Class park
 	~park();
 	
 	//mutators:
-	setvalues(string name, string state, int visitors, int acres);
+	void setvalues(string name, string state, int visitors, int acres);
 	
 	// accessors 
 	string getname() const;
