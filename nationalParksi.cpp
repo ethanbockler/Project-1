@@ -1,43 +1,49 @@
+#include <fstream>
+#include <iostream>
+#include <string>
 #include "nationalParks.h"
-
-  //constructor and destructor 
-	park::park()
-  {
-    name = " ";
-    state = " ";
-    visitors = 0;
-    acres = 0;
-    
-  }
-	park::~park() {}
 	
-	//mutators:
-	void:: park setvalues(string namein, string statein, int visitorsin, int acresin)
-  {
+//mutators:
+void:: park setvalues(string namein, string statein, int visitorsin, int acresin)
+{
     name = namein;
     state = statein;
     visitors = visitorsin;
     acres = acresin;
-  }
-	
-	// accessors 
-	string park::getname() const
-  {
-    return name;
-  }
-	string park::getstate() const
-  {
-    return state;
-  }
-	int park::getvisitors() const
-  {
-    return visitors;
-  }
-	int park::getacres() const
-  {
-    return acres;
-  }
-	
-	
-	
+}
 
+void nationalPark::newPark()
+{
+    // has to read off text file of national parks
+}
+
+// accessors 
+string nationalPark::returnName() const
+{
+    return parkName;
+}
+
+string nationalPark::returnState() const
+{
+    return parkState;
+}
+
+int nationalPark::returnVisitors() const
+{
+    return parkVisitors;
+}
+
+double nationalPark::returnSize() const
+{
+    return parkSize;
+}
+
+//constructor and destructor 
+park::park()
+{
+    parkName = " ";
+    parkState = " ";
+    parkVisitors = 0;
+    parkSize = 0;
+}
+park::~park() {}
