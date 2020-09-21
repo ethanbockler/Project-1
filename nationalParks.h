@@ -1,30 +1,30 @@
-#include <iostream>
-#include <iomanip>
+#ifndef NATIONALPARK_H
+#define NATIONALPARK_H
 #include <string>
 using namespace std;
 
-Class park
+Class nationalPark
 {
-	public:
+public:
 	//constructor and destructor 
-	park();
-	~park();
+	nationalPark();
+	~nationalPark();
 	
 	//mutators:
+	void newPark(); // reading off of national park file
 	void setvalues(string name, string state, int visitors, int acres);
 	
 	// accessors 
-	string getname() const;
-	string getstate() const;
-	int getvisitors() const;
-	int getacres() const;
+	string returnName();
+	string returnState();
+    	int returnVisitors();
+    	double returnSize();
 	
-	
-	private: 
-	string name;
-	string state;
-	int visitors;
-	int acres;
-	
+private: 
+	string parkName;
+	string parkState;
+	int parkVisitors;
+	double parkSize;	
 }
 
+#endif
