@@ -22,6 +22,8 @@ public:
 
 private:
   nationalPark parkArray[AR_SIZE];
+  // we can get ar size by having a function in main that goes down the list of
+  // parks and then saves the number of lines there are
   int length;
 }
 
