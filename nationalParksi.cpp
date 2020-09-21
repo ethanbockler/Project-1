@@ -1,4 +1,4 @@
-#include "nationalparks.h"
+#include "nationalParks.h"
 
   //constructor and destructor 
 	park::park()
