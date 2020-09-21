@@ -1,0 +1,11 @@
+Acadia,Maine,3437286,49076.63
+Badlands,South Dakota,970998,242755.94
+Bryce Canyon,Utah,2594904,35835.08
+Everglades,Florida,1118300,1508938.57
+Glacier,Montana,3049839,1013125.99
+Great Smoky Mountains,North Carolina,12547743,522426.88
+Mount Rainier,Washington,1501621,236381.64
+Rocky Mountain,Colorado,4670053,265807.25
+Yellowstone,Wyoming,4422861,2219790.71
+Yosemite,California,4020288,761747.50
+Zion,Utah,4488268,147242.66
