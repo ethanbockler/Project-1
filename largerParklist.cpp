@@ -1,37 +1,49 @@
-#include "largerParklists.h"
- parklist::parklist()
-  {
-	  length = 0;
-  }
-  parklist::~parklist() {}
+#include <string>
+#include <iostream>
+#include <iomanip>
+#include "largerParkList.h"
+#include "nationalPark.h"
 
-  // mutators
-  void parklist::readin(ifstream &inFile) 
-  {
-	  int count;
-	  count = 0;
-	  inFile.open("file_name");
-	  while (inFile && count<AR_SIZE)
-	  {
-	  	park parkobj;
-	  	getline(inFile, namein);
-	  	getline(inFile,statein);
-	  	inFile >> visitorsin;
-	  	inFile >> acresin;
-	  	inFile.ignore(100,’\n’);
-	  	parkobj.setvalues(namein, statein, visitorsin, acresin);
-	  	array[count] = parkobj;
-	  	count ++;
-	  }
-	  inFile.close();
-  }
-  
-   <insert sorting algorithm functions>
+using namespace std;
 
+void ParkList::createList()
+{
+    // calls new park functiona and adds it to the array
+}
 
-  //accessors
-  void parklist::displaylist() const 
-   {
-	   
-	   // are we doing this is qt? im not sure
-   }
+void ParkList::sortState()
+{
+    // sorts park list by state name
+}
+
+void ParkList::sortSize()
+{
+    // sorts park list by size lower - > higher
+}
+
+void ParkList::sortVisitors()
+{
+    // sorts by visitors lower - > higher
+}
+
+void ParkList::displayParks()
+{
+    // display the park list
+}
+
+void ParkList::displayParksBySize()
+{
+    // display the park list name and size
+}
+
+void ParkList::displayParksByVisitors()
+{
+    // display the park list name and visitor
+}
+
+ParkList::ParkList()
+{
+    length = 0;
+}
+
+ParkList::~ParkList() {}
