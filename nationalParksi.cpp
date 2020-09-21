@@ -4,14 +4,6 @@
 #include "nationalParks.h"
 	
 //mutators:
-void:: park setvalues(string namein, string statein, int visitorsin, int acresin)
-{
-    name = namein;
-    state = statein;
-    visitors = visitorsin;
-    acres = acresin;
-}
-
 void nationalPark::newPark()
 {
     // has to read off text file of national parks
