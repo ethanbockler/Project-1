@@ -1,27 +1,28 @@
-#include "nationalParks.h"
+#ifndef NATIONALPARKS_H
+#define NATIONALPARKS_H
+#include "nationalPark.h"
+using namespace std;
 
- Class parklist
+class ParkList
 {
-  public:
-  parklist();
-  ~parklist();
+public:
+  ParkList();
+  ~ParkList();
 
   // mutators
-  void readin(ifstream &inFile);
-   <insert sorting algorithm functions>
+  void createList(); // initializes list with national parks
+  void sortState();  // sorts by state alphebetical
+  void sortSize();   // sorts by size lower -> higher
+  void sortVisitors(); // sorts by visitors lower-> higher
+  
+  void displayParks();
+  void displayParksByVisitors();
+  void displayParksBySize();  
 
 
-  //accessors
-  void displaylist() const; // are we doing this is qt? im not sure
-
-
-  private:
-  park array[AR_SIZE];
+private:
+  nationalPark parkArray[AR_SIZE];
   int length;
-
-
 }
 
-
-
-
+#endif
