@@ -49,7 +49,7 @@ ParkList::ParkList()
 ParkList::~ParkList() {}
 /*************************************************************************************************************
 **************************************************************************************************************
-*basic sorting function for names/state,         
+*basic sorting algorithm (index sort) for names/state using arrays
 *will adjust to adhere to class as well as style, doc guidelines/member names/etc and put into 
 *method for appropriate class
 *****************************************************************************************************************/
@@ -62,7 +62,7 @@ ParkList::~ParkList() {}
 
 	for (i = 0; i <= 6; i++)
 	{
-		cout << "Enter parkname: ";
+		cout << "Enter parkname: "; //once classes done, we can just use input textfile instead of manually entering
 		getline(cin, parkName[i]);
 	}
   
