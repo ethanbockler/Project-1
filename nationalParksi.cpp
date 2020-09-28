@@ -4,9 +4,26 @@
 #include "nationalPark.h"
 	
 //mutators:
-void nationalPark::newPark()
+void nationalPark::newPark(int place)
 {
-    // has to read off text file of national parks
+    ifstream fin;
+    ofstream fout;
+    fin.open("parks.txt");
+
+    int counter = 0;
+
+    while(place != counter)
+    {
+        fin.ignore(100, '\n');
+        counter++;
+    };
+
+    getline(fin, parkName, ',');
+    getline(fin, parkState, ',');
+    fin >> parkVisitors; fin.ignore();
+    fin >> parkSize;
+
+    fin.close();
 }
 
 // accessors 
