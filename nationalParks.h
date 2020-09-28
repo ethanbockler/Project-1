@@ -11,7 +11,7 @@ public:
 	~nationalPark();
 	
 	//mutators:
-	void newPark(); // reading off of national park file
+	void newPark(); // INPUT ARRAY NUMBER (LINE NUMBER - 1)
 	void setvalues(string name, string state, int visitors, int acres);
 	
 	// accessors 
