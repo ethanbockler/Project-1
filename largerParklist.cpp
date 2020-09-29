@@ -8,7 +8,10 @@ using namespace std;
 
 void ParkList::createList()
 {
-    // calls new park functiona and adds it to the array
+    for(int i=0; i < AR_SIZE; i++)
+    {
+        parkArray[i].newPark(i);
+    }
 }
 
 void ParkList::sortState()
