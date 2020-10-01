@@ -17,18 +17,7 @@ void ParkList::createList()
 void ParkList::sortState()
 {
     // sorts park list by state name
-    for(int i=0;i<ar_size;i++)
-	{
-		for(int j=i+1;j<ar_size;j++)
-		{
-			if(ar[i]>ar[j])
-			{
-				temp = ar[i];
-				ar[i]=ar[j];
-				ar[j]=temp;
-			}
-		}
-	}
+    
 }
 
 void ParkList::sortSize()
@@ -51,6 +40,18 @@ void ParkList::sortSize()
 void ParkList::sortVisitors()
 {
     // sorts by visitors lower - > higher
+	for(int i=0;i<ar_size;i++)
+	{
+		for(int j=i+1;j<ar_size;j++)
+		{
+			if(ar[i]>ar[j])
+			{
+				temp = ar[i];
+				ar[i]=ar[j];
+				ar[j]=temp;
+			}
+		}
+	}
 }
 
 void ParkList::displayParks()
