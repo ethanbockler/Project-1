@@ -46,6 +46,7 @@ void ParkList::displayParksByVisitors()
 
 ParkList::ParkList()
 {
+    parkArray[AR_SIZE];
     length = 0;
 }
 
