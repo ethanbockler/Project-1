@@ -14,9 +14,38 @@ void ParkList::createList(int AR_SIZE)
     }
 }
 
+void ParkList::sortName(int AR_SIZE)   // sorts by park name
+{
+    nationalPark temp;
+	for(int i=0;i< AR_SIZE; i++)
+	{
+		for(int j=i+1;j< AR_SIZE ;j++)
+		{
+			if(parkArray[i].returnName() < parkArray[j].returnName())
+			{
+				temp = parkArray[i];
+				parkArray[i]=parkArray[j];
+				parkArray[j]=temp;
+			}
+		}
+	}
+}
+
 void ParkList::sortState(int AR_SIZE)
 {
-    // sorts park list by state name
+    nationalPark temp;
+	for(int i=0;i< AR_SIZE; i++)
+	{
+		for(int j=i+1;j< AR_SIZE ;j++)
+		{
+			if(parkArray[i].returnState() < parkArray[j].returnState())
+			{
+				temp = parkArray[i];
+				parkArray[i]=parkArray[j];
+				parkArray[j]=temp;
+			}
+		}
+	}
 }
 
 void ParkList::sortSize(int AR_SIZE)
@@ -36,9 +65,21 @@ void ParkList::sortSize(int AR_SIZE)
 	}
 }
 
-void ParkList::sortVisitors(int AR_SIZE)
+void ParkList::sortVisitors(int AR_SIZE) // !!!!
 {
-    // sorts by visitors lower - > higher
+    nationalPark temp;
+	for(int i=0;i< AR_SIZE; i++)
+	{
+		for(int j=i+1;j< AR_SIZE ;j++)
+		{
+			if(parkArray[i].returnVisitors() > parkArray[j].returnVisitors())
+			{
+				temp = parkArray[i];
+				parkArray[i]=parkArray[j];
+				parkArray[j]=temp;
+			}
+		}
+	}
 }
 
 void ParkList::displayParks(int AR_SIZE)
