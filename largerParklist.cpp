@@ -14,7 +14,7 @@ void ParkList::createList(int AR_SIZE)
     }
 }
 
-void ParkList::sortName(int AR_SIZE)   // sorts by park name
+void ParkList::sortName(int AR_SIZE)
 {
     nationalPark temp;
 	for(int i=0;i< AR_SIZE; i++)
@@ -65,7 +65,7 @@ void ParkList::sortSize(int AR_SIZE)
 	}
 }
 
-void ParkList::sortVisitors(int AR_SIZE) // !!!!
+void ParkList::sortVisitors(int AR_SIZE)
 {
     nationalPark temp;
 	for(int i=0;i< AR_SIZE; i++)
@@ -82,7 +82,7 @@ void ParkList::sortVisitors(int AR_SIZE) // !!!!
 	}
 }
 
-void ParkList::displayParks(int AR_SIZE)
+void ParkList::displayParks(int AR_SIZE) //!!!!
 {
     for(int i=0; i < AR_SIZE; i++)
     {
@@ -90,12 +90,12 @@ void ParkList::displayParks(int AR_SIZE)
     }
 }
 
-void ParkList::displayParksBySize(int AR_SIZE)
+void ParkList::displayParksBySize(int AR_SIZE) //!!!!
 {
     // display the park list name and size
 }
 
-void ParkList::displayParksByVisitors(int AR_SIZE)
+void ParkList::displayParksByVisitors(int AR_SIZE) //!!!!
 {
     // display the park list name and visitor
 }
