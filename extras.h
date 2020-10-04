@@ -4,11 +4,11 @@
 #include <iostream>
 
 int getArraySize();
-void displayMenu();
-void displayHelpMenu();
-void contactHelp();
-void maintinence();
-void addNewPark(int* arraySize);
+void displayMenu(); 
+void displayHelpMenu(); //!!!!
+void contactHelp(); //!!!!
+void maintinence(); //!!!!
+void addNewPark(int* arraySize); //!!!!
 
 
 #endif
