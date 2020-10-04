@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void ParkList::createList()
+void ParkList::createList(int AR_SIZE)
 {
     for(int i=0; i < AR_SIZE; i++)
     {
@@ -14,64 +14,54 @@ void ParkList::createList()
     }
 }
 
-void ParkList::sortState()
+void ParkList::sortState(int AR_SIZE)
 {
     // sorts park list by state name
-    
 }
 
-void ParkList::sortSize()
+void ParkList::sortSize(int AR_SIZE)
 {
-    // sorts park list by size lower - > higher
-	for(int i=0;i<ar_size;i++)
+    nationalPark temp;
+	for(int i=0;i< AR_SIZE; i++)
 	{
-		for(int j=i+1;j<ar_size;j++)
+		for(int j=i+1;j< AR_SIZE ;j++)
 		{
-			if(ar[i]>ar[j])
+			if(parkArray[i].returnSize() > parkArray[j].returnSize())
 			{
-				temp = ar[i];
-				ar[i]=ar[j];
-				ar[j]=temp;
+				temp = parkArray[i];
+				parkArray[i]=parkArray[j];
+				parkArray[j]=temp;
 			}
 		}
 	}
 }
 
-void ParkList::sortVisitors()
+void ParkList::sortVisitors(int AR_SIZE)
 {
     // sorts by visitors lower - > higher
-	for(int i=0;i<ar_size;i++)
-	{
-		for(int j=i+1;j<ar_size;j++)
-		{
-			if(ar[i]>ar[j])
-			{
-				temp = ar[i];
-				ar[i]=ar[j];
-				ar[j]=temp;
-			}
-		}
-	}
 }
 
-void ParkList::displayParks()
+void ParkList::displayParks(int AR_SIZE)
 {
-    // display the park list
+    for(int i=0; i < AR_SIZE; i++)
+    {
+        // cout parks and attributes
+    }
 }
 
-void ParkList::displayParksBySize()
+void ParkList::displayParksBySize(int AR_SIZE)
 {
     // display the park list name and size
 }
 
-void ParkList::displayParksByVisitors()
+void ParkList::displayParksByVisitors(int AR_SIZE)
 {
     // display the park list name and visitor
 }
 
 ParkList::ParkList()
 {
-    parkArray[AR_SIZE];
+    parkArray[20];
     length = 0;
 }
 
