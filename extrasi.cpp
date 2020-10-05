@@ -38,17 +38,60 @@ void displayMenu()
 
 void maintinence()
 {
-    // add parks here
+	string password;
+	cout << "If you want to add a park:\n";
+	do {
+    cout << "Enter password: ";
+    getline(cin, password);
+    if (password == "password")
+    {
+    	cout << "You have access to add a park\n";
+    }
+	} while (password != "password");
 }
 
 void displayHelpMenu()
 {
-    // help menu
+	int option;
+
+	do {
+	cout << "\n\nWhat do you need help with?\nChoose an option from the menu.\n";
+	cout << "1. How to use the pamphlet\n";
+	cout << "2. Go back to main menu\n";
+	if (cin >> option)
+	{
+			if (option == 1)
+		{
+			"This pamphlet is to help visitors categorize national parks and help\n"
+			"them better choose which parks they would like to visit based off of their\n"
+			"preferances. Use the interactive menu to help you make your decision!"
+
+		}
+		else if (option == 2)
+			displayMenu();
+	}
+	else
+		cout << "Please enter a number between 1 and 2\n";
+
+	} while (option != 2);
 }
 
 void contactUs()
 {
-    // allow option to contact us
+	  char in;
+		cout << "\n\nPlease contact us with any of the listed options:\n";
+		cout << "Phone: (123)-456-789\n";
+		cout << "Email: nationalparks@gmail.com\n";
+		do {
+	    cout << "Enter x to go back to the main menu: ";
+	    getchar(in);
+	    if (in == 'x' || in == 'X')
+	    {
+	        displayMenu();
+	    }
+		} while (in!= 'x' || in!= 'X');
+
+
 }
 
 void addNewPark(int* AR_SIZE)
