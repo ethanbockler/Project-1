@@ -12,3 +12,19 @@ void addNewPark(int* arraySize); //!!!!
 
 
 #endif
+//mariam's
+#ifndef EXTRA_H_
+#define EXTRA_H_
+
+#include <iostream>
+
+int getArraySize();
+void displayMenu();
+void displayHelpMenu(); //!!!!
+void contactUs(); //!!!!
+void maintinence(); //!!!!
+void addNewPark(int& arraySize); //!!!!
+
+
+
+#endif /* EXTRA_H_ */
