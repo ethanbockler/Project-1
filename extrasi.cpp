@@ -98,6 +98,27 @@ void contactUs()
 
 void addNewPark(int* AR_SIZE)
 {
+	string name;
+	string state;
+	int visitors;
+	double size;
     // add park to txt file
     // changing value of ar size and resetting the list
+	AR_SIZE ++;
+	ifstream inFile("parks.txt");
+	inFile.open();
+	// not sure how we want to add everything
+	cout << "Enter park's name:";
+	getline(cin,name);
+	cout << "Enter park's state:";
+	getline(cin,state);
+	cout << "Enter park's # of visitors:";
+	cin >> visitors;
+	inFile.ignore(100,'\n');
+	cout << "Enter park's size:";
+	cin >> size;
+
+	inFile << name << ", " << state << ", " << visitors << ", " << size << endl;
+	inFile.close();
+	
 }
