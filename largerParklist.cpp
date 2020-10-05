@@ -178,3 +178,141 @@ ParkList::~ParkList() {}
 		cout << parkName[index[i]] << endl;
 	}
 }*/
+
+//Mariam's
+#include <string>
+#include <iostream>
+#include <iomanip>
+#include "largerParklist.h"
+#include "nationalParks.h"
+
+using namespace std;
+
+void ParkList::createList(int AR_SIZE)
+{
+    for(int i=0; i < AR_SIZE; i++)
+    {
+        parkArray[i].newPark(i);
+    }
+}
+
+void ParkList::sortName(int AR_SIZE)
+{
+    nationalPark temp;
+	for(int i=0;i< AR_SIZE; i++)
+	{
+		for(int j=i+1;j< AR_SIZE ;j++)
+		{
+			if(parkArray[i].returnName() < parkArray[j].returnName())
+			{
+				temp = parkArray[i];
+				parkArray[i]=parkArray[j];
+				parkArray[j]=temp;
+			}
+		}
+	}
+}
+
+void ParkList::sortState(int AR_SIZE)
+{
+    nationalPark temp;
+	for(int i=0;i< AR_SIZE; i++)
+	{
+		for(int j=i+1;j< AR_SIZE ;j++)
+		{
+			if(parkArray[i].returnState() < parkArray[j].returnState())
+			{
+				temp = parkArray[i];
+				parkArray[i]=parkArray[j];
+				parkArray[j]=temp;
+			}
+		}
+	}
+}
+
+void ParkList::sortSize(int AR_SIZE)
+{
+    nationalPark temp;
+	for(int i=0;i< AR_SIZE; i++)
+	{
+		for(int j=i+1;j< AR_SIZE ;j++)
+		{
+			if(parkArray[i].returnSize() > parkArray[j].returnSize())
+			{
+				temp = parkArray[i];
+				parkArray[i]=parkArray[j];
+				parkArray[j]=temp;
+			}
+		}
+	}
+}
+
+void ParkList::sortVisitors(int AR_SIZE)
+{
+    nationalPark temp;
+	for(int i=0;i< AR_SIZE; i++)
+	{
+		for(int j=i+1;j< AR_SIZE ;j++)
+		{
+			if(parkArray[i].returnVisitors() > parkArray[j].returnVisitors())
+			{
+				temp = parkArray[i];
+				parkArray[i]=parkArray[j];
+				parkArray[j]=temp;
+			}
+		}
+	}
+}
+
+void ParkList::displayParks(int AR_SIZE) //!!!!
+{
+    cout << "\n\nParks Sorted by Size:\n";
+	sortSize(AR_SIZE);
+	cout << setw(23) << left << "Park" << setw(12) << left << "Size" << setw(20) << left << "State"
+			<< setw(20) << left << "Visitors" << endl;
+	cout << "___________________________________________________________\n";
+	for (int i = 0; i<AR_SIZE; i++)
+	{
+		cout << setw(23) << left << parkArray[i].returnName() << setw(12) << left << parkArray[i].returnSize() << setw(20) << left
+				<< parkArray[i].returnState()
+					<< setw(20) << left << parkArray[i].returnVisitors() << endl;
+	}
+	cout << endl;
+}
+
+
+void ParkList::displayParksBySize(int AR_SIZE) //!!!!
+{
+    // display the park list name and size
+	cout << "\n\nParks Sorted by Area:\n";
+	sortSize(AR_SIZE);
+	cout << setw(23) << left << "Park" << setw(20) << left << "Area (acres)" << endl;
+	cout << "______________________________________________\n";
+	for (int i = 0; i<AR_SIZE; i++)
+	{
+		cout << setw(23) << left << parkArray[i].returnName() << setw(20) << left << parkArray[i].returnSize()<< endl;
+	}
+	cout << endl;
+}
+
+void ParkList::displayParksByVisitors(int AR_SIZE) //!!!!
+{
+    // display the park list name and visitor
+	cout << "\n\nParks Sorted by Visitors:\n";
+	sortVisitors(AR_SIZE);
+	cout << setw(23) << left << "Park" << setw(20) << left << "# of Visitors" << endl;
+	cout << "______________________________________________\n";
+	for (int i = 0; i<AR_SIZE; i++)
+	{
+		cout << setw(23) << left << parkArray[i].returnName() << setw(20) << left << parkArray[i].returnVisitors() << endl;
+	}
+	cout << endl;
+}
+
+ParkList::ParkList()
+{
+    length = 0;
+}
+
+ParkList::~ParkList() {}
+
