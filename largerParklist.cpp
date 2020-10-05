@@ -88,16 +88,47 @@ void ParkList::displayParks(int AR_SIZE) //!!!!
     {
         // cout parks and attributes
     }
+    cout << "\n\nParks Sorted by Size:\n";
+	sortSize(AR_SIZE);
+	cout << setw(12) << left << "Park" << setw(12) << left << "Size" << setw(10) << left << "State"
+			<< setw(20) << left << "Visitors" << endl;
+	cout << "___________________________________________________________\n";
+	for (int i = 0; i<AR_SIZE, i++)
+	{
+		cout << setw(12) << left << parkArray[i].parkName << setw(12) << left << parkArray[i].parkSize << setw(10) << left
+				<< parkArray[i].parkState
+					<< setw(20) << left << parkArray[i].parkVisitors << endl;
+	}
+	cout << endl;
 }
+
 
 void ParkList::displayParksBySize(int AR_SIZE) //!!!!
 {
     // display the park list name and size
+	cout << "\n\nParks Sorted by Size:\n";
+	sortSize(AR_SIZE);
+	cout << setw(12) << left << "Park" << setw(20) << left << "Size (acres)" << endl;
+	cout << "______________________________________________\n";
+	for (int i = 0; i<AR_SIZE, i++)
+	{
+		cout << setw(12) << left << parkArray[i].parkName << setw(20) << left << parkArray[i].parkSize << endl;
+	}
+	cout << endl;
 }
 
 void ParkList::displayParksByVisitors(int AR_SIZE) //!!!!
 {
     // display the park list name and visitor
+	cout << "\n\nParks Sorted by Visitors:\n";
+	sortVisitors(AR_SIZE);
+	cout << setw(12) << left << "Park" << setw(20) << left << "# of Visitors" << endl;
+	cout << "______________________________________________\n";
+	for (int i = 0; i<AR_SIZE, i++)
+	{
+		cout << setw(12) << left << parkArray[i].parkName << setw(20) << left << parkArray[i].parkVisitors << endl;
+	}
+	cout << endl;
 }
 
 ParkList::ParkList()
