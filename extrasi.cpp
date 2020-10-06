@@ -204,20 +204,28 @@ void displayHelpMenu()
 	} while (option != 2);
 }
 
+
 void contactUs()
 {
-	  char in;
-		cout << "\n\nPlease contact us with any of the listed options:\n";
+	  int in;
+		cout << "\nPlease contact us with any of the listed options:\n";
 		cout << "Phone: (123)-456-789\n";
 		cout << "Email: nationalparks@gmail.com\n";
+
 		do {
-	    cout << "Enter x to go back to the main menu: ";
-	    cin.get(in);
-	    if (in == 'x' || in == 'X')
-	    {
+	    cout << "Enter 0 to go back to the main menu:\n";
+
+	   if (cin>>in)
+	   {
+		   	  if (cin == 0)
+		   	  {
+
 	        displayMenu();
-	    }
-		} while (in!= 'x' || in!= 'X');
+	
+		   	  }
+	   }
+
+		} while (in!= 0);
 
 
 }
