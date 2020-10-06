@@ -252,7 +252,7 @@ void addNewPark(int& AR_SIZE)
 	fin.ignore(100,'\n');
 	cout << "Enter park's size:";
 	cin >> size;
-	fout.open("parks.txt");
+	fout.open("parks.txt", ios::app);
 	fout << name << ", " << state << ", " << visitors << ", " << size << endl;
 	fin.close();
 	fout.close();
