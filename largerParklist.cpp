@@ -84,8 +84,8 @@ void ParkList::sortVisitors(int AR_SIZE)
 
 void ParkList::displayParks(int AR_SIZE) //!!!!
 {
-    cout << "\n\nParks Sorted by Size:\n";
-	sortSize(AR_SIZE);
+   // cout << "\n\nParks Sorted by Size:\n";
+//	sortSize(AR_SIZE);
 	cout << setw(12) << left << "Park" << setw(12) << left << "Size" << setw(10) << left << "State"
 			<< setw(20) << left << "Visitors" << endl;
 	cout << "___________________________________________________________\n";
@@ -266,8 +266,8 @@ void ParkList::sortVisitors(int AR_SIZE)
 
 void ParkList::displayParks(int AR_SIZE) //!!!!
 {
-    cout << "\n\nParks Sorted by Size:\n";
-	sortSize(AR_SIZE);
+   // cout << "\n\nParks Sorted by Size:\n";
+//	sortSize(AR_SIZE);
 	cout << setw(23) << left << "Park" << setw(12) << left << "Size" << setw(20) << left << "State"
 			<< setw(20) << left << "Visitors" << endl;
 	cout << "___________________________________________________________\n";
