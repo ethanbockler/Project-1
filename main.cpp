@@ -113,8 +113,9 @@ int main()
                 contactUs(); //!!!!
                 break;
             case 9:
-                maintinence(); //!!!!
+                 maintinence();
                 addNewPark(AR_SIZE);
+                parkArray.createList(AR_SIZE);
                 break;
             case 0:
                 cout << "\nThank you for using the program, goodbye!";
