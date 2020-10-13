@@ -58,7 +58,7 @@ nationalPark::nationalPark()
 
 nationalPark::~nationalPark() {}
 
-//Mariam's
+//MOST UPDATED
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -118,4 +118,5 @@ nationalPark::nationalPark()
 }
 
 nationalPark::~nationalPark() {}
+
 
