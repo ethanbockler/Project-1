@@ -179,7 +179,7 @@ ParkList::~ParkList() {}
 	}
 }*/
 
-//Mariam's
+//MOST UPDATED 
 #include <string>
 #include <iostream>
 #include <iomanip>
@@ -203,7 +203,7 @@ void ParkList::sortName(int AR_SIZE)
 	{
 		for(int j=i+1;j< AR_SIZE ;j++)
 		{
-			if(parkArray[i].returnName() < parkArray[j].returnName())
+			if(parkArray[i].returnName() > parkArray[j].returnName())
 			{
 				temp = parkArray[i];
 				parkArray[i]=parkArray[j];
@@ -220,7 +220,7 @@ void ParkList::sortState(int AR_SIZE)
 	{
 		for(int j=i+1;j< AR_SIZE ;j++)
 		{
-			if(parkArray[i].returnState() < parkArray[j].returnState())
+			if(parkArray[i].returnState() > parkArray[j].returnState())
 			{
 				temp = parkArray[i];
 				parkArray[i]=parkArray[j];
@@ -266,8 +266,7 @@ void ParkList::sortVisitors(int AR_SIZE)
 
 void ParkList::displayParks(int AR_SIZE) //!!!!
 {
-   // cout << "\n\nParks Sorted by Size:\n";
-//	sortSize(AR_SIZE);
+	//sortSize(AR_SIZE);
 	cout << setw(23) << left << "Park" << setw(12) << left << "Size" << setw(20) << left << "State"
 			<< setw(20) << left << "Visitors" << endl;
 	cout << "___________________________________________________________\n";
@@ -315,4 +314,5 @@ ParkList::ParkList()
 }
 
 ParkList::~ParkList() {}
+
 
