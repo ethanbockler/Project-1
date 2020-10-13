@@ -59,7 +59,7 @@ int main()
     }
     while(input != 0);
 }
-// Mariam's 
+// MOST UPDATED
 #include <iostream>
 #include <iomanip>
 #include <string>
@@ -84,7 +84,7 @@ int main()
         {
             case 1:
                 parkArray.sortName(AR_SIZE);
-                parkArray.displayParks(AR_SIZE); //!!!!
+                parkArray.displayParks(AR_SIZE);
                 break;
             case 2:
                 parkArray.sortState(AR_SIZE);
@@ -100,20 +100,20 @@ int main()
                 break;
             case 5:
                 parkArray.sortVisitors(AR_SIZE);
-                parkArray.displayParksByVisitors(AR_SIZE); //!!!!
+                parkArray.displayParksByVisitors(AR_SIZE);
                 break;
             case 6:
                 parkArray.sortSize(AR_SIZE);
-                parkArray.displayParksBySize(AR_SIZE); //!!!!
+                parkArray.displayParksBySize(AR_SIZE);
                 break;
             case 7:
-                displayHelpMenu(); //!!!!
+                displayHelpMenu();
                 break;
             case 8:
-                contactUs(); //!!!!
+                contactUs();
                 break;
             case 9:
-                 maintinence();
+                maintinence();
                 addNewPark(AR_SIZE);
                 parkArray.createList(AR_SIZE);
                 break;
@@ -123,6 +123,9 @@ int main()
     }
     while(input != 0);
 }
+
+
+
 
 
 
