@@ -29,9 +29,7 @@ private:
 
 #endif
 
-//Mariam's
-
-
+//MOST UPDATED
 #ifndef LARGERPARKLIST_H_
 #define LARGERPARKLIST_H_
 
@@ -53,9 +51,9 @@ public:
   void sortSize(int AR_SIZE);   // sorts by size lower -> higher
   void sortVisitors(int AR_SIZE); // sorts by visitors lower-> higher
 
-  void displayParks(int AR_SIZE); //!!!!
-  void displayParksByVisitors(int AR_SIZE); //!!!!
-  void displayParksBySize(int AR_SIZE); //!!!!
+  void displayParks(int AR_SIZE);
+  void displayParksByVisitors(int AR_SIZE);
+  void displayParksBySize(int AR_SIZE);
 
 
 private:
@@ -65,4 +63,5 @@ private:
 
 
 #endif /* LARGERPARKLIST_H_ */
+
 
