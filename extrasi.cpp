@@ -123,7 +123,7 @@ void addNewPark(int* AR_SIZE)
 	
 }
 
-//mariam's
+//MOST UPDATED: 
 #include <iostream>
 #include <fstream>
 #include <iomanip>
@@ -165,6 +165,7 @@ void displayMenu()
 void maintinence()
 {
 	string password;
+	cin.ignore(100,'\n');
 	cout << "If you want to add a park:\n";
 	do {
     cout << "Enter password: ";
@@ -191,19 +192,22 @@ void displayHelpMenu()
 			if (option == 1)
 		{
 			cout << "This pamphlet is to help visitors categorize national parks and help\n"
-			"them better choose which parks they would like to visit based off of their\n"
+			"them choose which parks they would like to visit based off of their\n"
 			"preferances. Use the interactive menu to help you make your decision!";
 
 		}
 		else if (option == 2)
+		{
+			cin.ignore(100,'\n');
 			displayMenu();
+
+		}
 	}
 	else
 		cout << "Please enter a number between 1 and 2\n";
 
 	} while (option != 2);
 }
-
 
 void contactUs()
 {
@@ -221,7 +225,7 @@ void contactUs()
 		   	  {
 
 	        displayMenu();
-	
+
 		   	  }
 	   }
 
@@ -258,4 +262,5 @@ void addNewPark(int& AR_SIZE)
 	fout.close();
 
 }
+
 
